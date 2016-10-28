@@ -2,6 +2,7 @@ package be.simulation.aquarium;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Aquarium {
 
@@ -23,14 +24,15 @@ public class Aquarium {
 			while (content.size() >= maxSize) {
 				content.remove(content.keySet().iterator().next());
 			}
-			content.put(new Key(o), count(o)+1);
+			final Key key = new Key(o);
+			int count = content.containsKey(key) ? count(o)+1 : 1;
+			content.put(key, count);
 		}
 	}
 
-	public Integer count(Object o) {
+	public int count(Object o) {
 		synchronized (content) {
-			Integer value = content.get(new Key(o));
-			return value == null ? 0 : value;
+			return content.get(new Key(o));
 		}
 	}
 	
@@ -54,19 +56,6 @@ public class Aquarium {
 		public String toString() {
 			return k.toString();
 		}
-
-//		@Override
-//	    public boolean equals(Object o) {
-//	      if (this == o) return true;
-//	      if (o == null || getClass() != o.getClass()) return false;
-//	      return k.equals(((Key) o).k);
-//	    }
-//
-//	    @Override
-//	    public int hashCode() {
-//	      return k.hashCode();
-//	    }
-		
 	}
 
 }
