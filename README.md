@@ -28,8 +28,9 @@
 ## The Anagram Detector
 Write a program to detect if two strings are anagrams. An anagram is a word or phrase formed by rearranging the letters of another.
 For example:
-- "night" and "thing"
-- "a perfectionist" and "I often practice"
+- `night` and `thing`
+- `schoolmaster` and `the classroom
+- `a telephone girl` and `repeating 'Hello'`
 
 ## The FizzBuzz
 Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
