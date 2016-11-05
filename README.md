@@ -19,7 +19,8 @@
 - Clean code + object oriented principles?
 - Test driven approach?
 - Does the candidate pick up feedback from the interviewer and put it into practice?
-- Is the candidate not afraid to speak up during the technical interview?
+- Is the candidate not afraid to speak up during the technical interview? Are the soft skills ok?
+
 
 ---
 
