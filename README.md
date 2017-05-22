@@ -58,4 +58,4 @@ For example: 5! = 5 \* 4 \* 3 \* 2 \* 1 = 120
 # Technical Interview
 
 ## The Aquarium
-The Aquarium is a magical world for fishes with all kinds of colors. However, all unit tests of The Aquarium are failing. Can you fix them so all the fish can live happily ever after?
+The Aquarium is a magical world for fishes with all kinds of colors. However, all unit tests of The Aquarium are failing. Can you fix the Aquarium and its tests so all the fish can live happily ever after?
